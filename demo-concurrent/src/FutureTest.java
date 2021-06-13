@@ -53,6 +53,11 @@ public class FutureTest {
             e.printStackTrace();
         }
 
+        executor.shutdown();
+
+        System.out.println(executor.isShutdown());
+        System.out.println(executor.isTerminated());
+
     }
 
 }
